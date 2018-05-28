@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Name is Prompt</title>
+</head>
+<body>
+	<h1> My name is</h1>
+	
+	<!-- Creating an id for javascript -->
+	<h1 id="nametext"></h1> 
+
+	<script>
+			console.log("This is a message from internal");
+			// = prompt("") creates
+		var user = prompt("Please enter your name");
+			console.log(user) ;
+			
+		//Getting the html element that has the id keyword "welcomeText"
+		var h1 =document.getElementById('nametext');
+			h1.innerHTML = ' ' + user + '!!!'
+
+</script>
+</body>
+</html>
