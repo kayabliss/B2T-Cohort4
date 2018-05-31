@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id='display'></p>
+
+<form>
+<!-- form tag is a box to hold your inputs -->
+First name: <input type='text' id='fname'/>
+<br >
+
+Last name: <input type='text' id='lname'/>
+<br>
+
+<input type="button" value="Submit" onclick="getFormValue()" />
+
+</form>
+	<script>
+		function getFormValue(){
+			var firstName = document.getElementById("fname").value
+			var lastName = document.getElementById("lname").value
+			document.getElementById('display').innerHTML = "hello " + firstName +" "+  lastName
+
+		}
+	</script>
+
+</body>
+</html>
