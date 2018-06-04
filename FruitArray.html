@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="fruitlist"></h1>
+	<input type="button"  value="push for prompt" onclick="pushPrompt()">
+	<script>
+
+		var fruits = ["apple", "orange", "kiwi"];
+		
+		function pushPrompt(){
+			console.log("jhgjhgjh");
+
+			var element = prompt("Enter New Fruit").toLowerCase();
+			fruits.push(element);
+			fruits.sort();
+			console.log(fruits);
+
+			document.getElementById('fruitlist').innerHTML = fruits;
+	}		
+	</script>
+
+</body>
+</html>
