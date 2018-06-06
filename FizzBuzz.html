@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1> Fizz Buzz Assignment</h1>
+	<p id="text"></p>
+	<script>
+		var num = 1;
+		while (num <= 100){
+			if(num%3 == 0 && num%5 == 0){
+				console.log("Fizz");
+				document.getElementById("text").innerHTML += "Fizz Buzz" + "<br>";
+			}else if(num%5 == 0){
+				console.log("Buzz");
+				document.getElementById("text").innerHTML += "Buzz" + "<br>";
+			}
+			 else if(num%3 == 0){
+				console.log("Fizz")
+				document.getElementById("text").innerHTML += "Fizz " + "<br>";
+			}
+			else{
+				document.getElementById("text").innerHTML += num + "<br>";
+			}
+			num++
+		}
+		
+	</script>
+
+</body>
+</html>
