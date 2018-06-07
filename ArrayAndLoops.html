@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul id="text"></ul>
+	<script>
+	var color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "]
+	var o = ["th", "st", "nd", "rd"];
+	var num = 0;
+	
+	for (i = 0; i < o.length; i++){
+		console.log(o[i]);
+	}
+
+
+	for(i = 0; i < color.length-4; i++){
+		num++
+		console.log(color[i]);
+		document.getElementById("text").innerHTML += '<li>  '  +  num  + o[i+1] +   " choice is " +  color[i] +  '</li>';
+	}
+
+	for(i = 3; i < color.length; i++){
+		num++
+		console.log(color[i]);
+		document.getElementById("text").innerHTML += ' <li>  '  +  num   +  o[0] +  " choice is " +  color[i]  +  '</li>';
+	}
+	
+/*Consider the following arrays :
+looping thru and display colors in order of array with 1st, 2nd, third
+
+color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+
+o = ["th", "st", "nd", "rd"];
+
+Display the colors on the web page in the following way :
+
+"1st choice is Blue ."
+
+"2nd choice is Green."
+
+"3rd choice is Red."
+
+"4th choice is Orange." etc -->
+*/
+</script>
+</body>
+</html>
