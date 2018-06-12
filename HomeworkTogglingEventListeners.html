@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.square {
+  	height: 100px;
+  	width: 100px;
+  	background-color: red;
+  	background-color: green;
+  	
+}
+</style>
+</head>
+<body>
+	<input type="button" id="myButton"  value="ON" onclick="powerButton()"></input>
+	<div id="box" style="background-color: green" class="square"></div>
+	<!--<div id="box" style="background-color: red"></div> -->
+		
+
+	<script>
+		function powerButton(){
+			// putting text1 in a variable so that text.innerHTML can be shorthandvar btn = document.createElement("BUTTON");
+			var power = document.getElementById('myButton');
+				if(power.value == "ON"){
+					power.value = "OFF";
+				// one equal sign because you ar assigning not comparing
+			
+				}else{
+					power.value = "ON";
+
+			}
+			
+	} 
+
+	
+		
+		
+		function boxColor(){
+				var boxColor = document.getElementById("box");
+				if(boxColor.style.backgroundColor == 'green'){
+					boxColor.style.backgroundColor = 'red';
+
+				}else{
+					boxColor.style.backgroundColor = 'green';
+			
+	}
+}
+		
+		document.getElementById('box').addEventListener('mouseover', boxColor);
+		document.getElementById('box').addEventListener('change', boxColor);
+		//document.getElementById('text1').addEventListener('mouseenter',powerButton);
+		// we are referencing the function in the addEventListener('mouseenter', changeText);
+		//document.getElementById('text1').addEventListener('mouseenter',powerButton);
+
+	</script>
+
+</body>
+</html>
+
+<!--Create a button that when clicked changes the button’s text from ‘ON’ to ‘OFF’ and vice versa
+	1. create a button, 
+	2. when button is clicked the text is changed to on or off
+	3.
+
+Create a box that’s background color is green when the mouse is over it and red when it is not
+1. create a box
+2. background color is red
+3. background color is green when mouse is over it eventlistener
+4. box changes color when button is on.
+
+The box should only change color when the button’s text is ‘ON’
+
+Create your event listeners in JavaScript -->
