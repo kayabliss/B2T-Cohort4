@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<ol id="display"></ol> 
+	<ul></ul>
+	<script>
+		var library =[
+		{author:'Bill Gates', title:'The Road Ahead', readingStatus: true },
+		{author:'Steve Jobs', title:'Walter Isaacson', readingStatus: true},
+		{author:'Suzanne Collins', title: 'Mockingjay:The Final Book of the hunger games', readingStatus: false}
+		];
+		function displayBook(){
+			for(i=0; i < library.length; i++){
+				if( library[i].readingStatus == true){
+					document.getElementById('display').innerHTML += ' <li> ' + ' Already read ' + library[i].title + ' by ' + library[i].author;
+
+				}else{
+					document.getElementById('display').innerHTML += ' <li> ' + ' You still need to read' + library[i].title + ' by ' + library[i].author;
+				}
+		
+			}
+		}
+
+		displayBook()	
+	</script>
+
+</body>
+</html>
+
+<!-- If the reading status is false display “You still need to read '<insert title>' by <insert author>.”
