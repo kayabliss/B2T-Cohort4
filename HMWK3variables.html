@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id= "Three numbers"></h1>
+	<script>
+		var input = parseInt (prompt("what is your first number?"));
+		var input2 = parseInt (prompt("what is your second number?"));
+		var input3 = parseInt (prompt("what is your third number?"));
+		
+		if (input > input2 && input > input3){
+			document.getElementById('Three numbers').innerHTML = input + ' is the greatest number ';
+
+		} else if (input2 > input3) {
+			document.getElementById('Three numbers').innerHTML = input2 + ' is your greatest number';
+		}else {
+			document.getElementById('Three numbers').innerHTML = input3 + 'is your greatest number';
+		}
+
+	</script>
+
+</body>
+</html>
